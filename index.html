@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head><title>Ejemplo Git</title></head>
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p>Escribinos a contacto@example.com</p>
-</section>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Git</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007BFF;
+    }
+    img {
+      margin: 5px;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
 <body>
-<h1>Versión final unificada del conflicto</h1>
-<section id="galeria">
-  <h2>Galería</h2>
-  <img src="https://via.placeholder.com/150" alt="Imagen 1">
-  <img src="https://via.placeholder.com/150" alt="Imagen 2">
-</section>
-<footer>
-  <p>&copy; 2025 Curso de Git</p>
-</footer>
+  <nav>
+    <a href="#contacto">Contacto</a>
+    <a href="#galeria">Galería</a>
+  </nav>
+
+  <h1>Versión final unificada del conflicto</h1>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <img src="https://via.placeholder.com/150" alt="Imagen 1">
+    <img src="https://via.placeholder.com/150" alt="Imagen 2">
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Escribinos a <a href="mailto:contacto@example.com">contacto@example.com</a></p>
+    <form>
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Curso de Git</p>
+  </footer>
 </body>
 </html>
